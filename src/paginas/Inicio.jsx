@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import "./Inicio.css";
+import "./inicio.css";
 import { requisitar } from "../api";
 
 function Inicio({ usuario, setTela }) {
