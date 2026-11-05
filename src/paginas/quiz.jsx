@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { requisitar } from "../api";
-import "./Quiz.css";
+import "./quiz.css";
 
 function Quiz({ usuario, setTela}) {
   const [perguntas, setPerguntas] = useState([]);
