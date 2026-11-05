@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Perfil.css";
+import "./perfil.css";
 
 function Perfil({ usuario, atualizarUsuario }) {
 
