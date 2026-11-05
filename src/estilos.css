@@ -1,0 +1,220 @@
+/* =====================================
+   INÍCIO RIZZA
+===================================== */
+
+.inicio {
+  width: calc(100vw - 80px) !important;
+  max-width: none !important;
+  min-height: calc(100vh - 80px);
+
+  margin: 0 auto !important;
+  padding: 60px 70px !important;
+
+  box-sizing: border-box;
+}
+
+/* =====================================
+   CABEÇALHO
+===================================== */
+
+.inicio-header {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.inicio-bem-vindo {
+  margin: 0 0 10px;
+
+  color: #78958c;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.inicio-header h1 {
+  margin: 0;
+
+  color: #315b54;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.inicio-descricao {
+  margin: 12px 0 0;
+
+  color: #71807b;
+  font-size: 16px;
+}
+
+/* =====================================
+   ÁREA DOS CARDS
+===================================== */
+
+.inicio-grid {
+  width: 100% !important;
+
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+
+  gap: 30px;
+
+  align-items: stretch;
+}
+
+/* =====================================
+   CARDS
+===================================== */
+
+.inicio-card {
+  min-height: 340px;
+
+  padding: 36px;
+
+  box-sizing: border-box;
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 25px rgba(55, 85, 76, 0.07);
+}
+
+/* =====================================
+   CARD DA CONTA
+===================================== */
+
+.conta-card {
+  background: #f4f8f5;
+  border: 1px solid #dce8e1;
+}
+
+.inicio-card h2 {
+  margin: 0;
+
+  color: #416c64;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.conta-card h2 {
+  margin-bottom: 35px;
+}
+
+.conta-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.dado {
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid #dce7e1;
+}
+
+.dado:last-child {
+  border-bottom: none;
+}
+
+.dado span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #7b8984;
+  font-size: 13px;
+}
+
+.dado strong {
+  color: #294740;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* =====================================
+   CARD DO QUIZ
+===================================== */
+
+.quiz-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #eaf2ed;
+  border: 1px solid #d6e4dc;
+}
+
+.quiz-tag {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #78978d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.quiz-card h2 {
+  max-width: 450px;
+
+  margin-bottom: 18px;
+
+  font-size: 28px;
+}
+
+.quiz-card p {
+  max-width: 480px;
+
+  margin: 0;
+
+  color: #63746e;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =====================================
+   BOTÃO
+===================================== */
+
+.quiz-button {
+  align-self: flex-start;
+
+  padding: 14px 28px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #527b70;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.quiz-button:hover {
+  background: #41685f;
+  transform: translateY(-1px);
+}
+
+/* =====================================
+   TELAS MENORES
+===================================== */
+
+@media (max-width: 800px) {
+
+  .inicio {
+    width: 100% !important;
+    padding: 35px 25px !important;
+  }
+
+  .inicio-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .inicio-header h1 {
+    font-size: 32px;
+  }
+}

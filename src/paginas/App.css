@@ -1,0 +1,284 @@
+
+/* ========================================
+   RIZZA — RESPONSIVIDADE GLOBAL
+   Celular, tablet e computador
+======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  max-width: 100%;
+  font: inherit;
+}
+
+button {
+  min-height: 40px;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  min-width: 0;
+}
+
+/* Conteúdo principal */
+
+.conteudo {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Cards e áreas de conteúdo */
+
+.cards-gerenciamento,
+.cards,
+.dashboard-cards,
+.cards-dashboard {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.card-gerenciamento,
+.card,
+.card-dashboard {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Formulários */
+
+form {
+  width: 100%;
+  min-width: 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+label {
+  overflow-wrap: anywhere;
+}
+
+button,
+input[type="submit"] {
+  touch-action: manipulation;
+}
+
+/* Tabelas: permitem rolagem em telas pequenas */
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  overflow-wrap: anywhere;
+}
+
+.tabela-container,
+.table-container,
+.tabela-responsiva {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ========================================
+   TABLETS — até 900px
+======================================== */
+
+@media (max-width: 900px) {
+  .conteudo {
+    padding: 24px;
+  }
+
+  .gerenciamento {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .menu-gerenciamento {
+    max-width: 100%;
+  }
+
+  .conteudo-gerenciamento {
+    min-width: 0;
+    width: 100%;
+    padding: 24px;
+  }
+
+  .cabecalho-gerenciamento {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .cards-gerenciamento {
+    grid-template-columns:
+      repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  }
+}
+
+/* ========================================
+   CELULARES — até 600px
+======================================== */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  .conteudo {
+    padding: 16px;
+  }
+
+  .conteudo-gerenciamento {
+    padding: 16px;
+  }
+
+  .cabecalho-gerenciamento {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .cabecalho-gerenciamento h1 {
+    font-size: clamp(24px, 6vw, 32px);
+    overflow-wrap: anywhere;
+  }
+
+  .cards-gerenciamento,
+  .cards,
+  .dashboard-cards,
+  .cards-dashboard {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .card-gerenciamento,
+  .card,
+  .card-dashboard {
+    padding: 16px;
+  }
+
+  .menu-gerenciamento {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .menu-gerenciamento nav {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .menu-gerenciamento nav button {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .quiz-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 18px;
+    margin: 0 auto;
+  }
+
+  .quiz-opcao {
+    width: 100%;
+    min-height: 48px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: left;
+  }
+
+  .login-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 16px;
+  }
+
+  .login-page input,
+  .login-page select,
+  .login-page button {
+    width: 100%;
+  }
+
+  form button {
+    min-height: 46px;
+  }
+
+  table {
+    min-width: 560px;
+  }
+
+  .tabela-container table,
+  .table-container table,
+  .tabela-responsiva table {
+    min-width: 560px;
+  }
+}
+
+/* ========================================
+   CELULARES MUITO ESTREITOS — até 360px
+======================================== */
+
+@media (max-width: 360px) {
+  .conteudo,
+  .conteudo-gerenciamento {
+    padding: 12px;
+  }
+
+  .quiz-container {
+    padding: 14px;
+  }
+
+  .card-gerenciamento,
+  .card,
+  .card-dashboard {
+    padding: 12px;
+  }
+}

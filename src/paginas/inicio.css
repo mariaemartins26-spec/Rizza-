@@ -1,0 +1,656 @@
+
+/* ========================================
+   RIZZA — TELA INICIAL RESPONSIVA
+======================================== */
+
+.inicio {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 32px clamp(16px, 3vw, 44px) 48px;
+
+  color: #30483a;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.inicio *,
+.inicio *::before,
+.inicio *::after {
+  box-sizing: border-box;
+}
+
+.inicio h1,
+.inicio h2,
+.inicio p {
+  overflow-wrap: anywhere;
+}
+
+.inicio h1 {
+  margin: 10px 0 12px;
+  color: #294b37;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: clamp(30px, 3vw, 44px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.inicio h2 {
+  margin: 8px 0 0;
+  color: #31533e;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: clamp(23px, 2.2vw, 30px);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.inicio p {
+  line-height: 1.7;
+}
+
+.inicio-label {
+  display: inline-block;
+  color: #64846c;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  line-height: 1.6;
+}
+
+/* BOAS-VINDAS */
+
+.inicio-boas-vindas {
+  width: 100%;
+  padding: clamp(24px, 4vw, 42px);
+  margin-bottom: 24px;
+
+  background: linear-gradient(120deg, #edf5ed, #f7faf5);
+  border: 1px solid #e2ece1;
+  border-radius: 22px;
+}
+
+.inicio-boas-vindas p {
+  max-width: 680px;
+  margin: 0;
+  color: #68796b;
+  font-size: 15px;
+}
+
+/* AÇÕES PRINCIPAIS */
+
+.inicio-acoes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.inicio-acoes button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 100px;
+  padding: 22px;
+
+  border: 1px solid #e0e9df;
+  border-radius: 18px;
+  text-align: left;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inicio-acoes button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(55, 91, 64, 0.09);
+}
+
+.inicio-acoes .acao-principal {
+  background: #527b60;
+  border-color: #527b60;
+  color: #ffffff;
+}
+
+.inicio-acoes .acao-secundaria {
+  background: #ffffff;
+  color: #355b40;
+}
+
+.inicio-acoes button > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 42px;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 26px;
+}
+
+.inicio-acoes .acao-secundaria > span {
+  background: #edf5ed;
+}
+
+.inicio-acoes button > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.inicio-acoes strong {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.inicio-acoes small {
+  font-size: 12px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* SEÇÕES */
+
+.inicio-secao {
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 28px;
+  padding: clamp(20px, 3vw, 30px);
+
+  background: #ffffff;
+  border: 1px solid #e7ede6;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(49, 83, 61, 0.035);
+}
+
+.secao-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+/* ÚLTIMA AVALIAÇÃO */
+
+.ultima-avaliacao {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.8fr) auto;
+  align-items: center;
+  gap: 22px;
+
+  width: 100%;
+  min-width: 0;
+  padding: 22px;
+
+  background: #f7faf6;
+  border: 1px solid #e7eee5;
+  border-radius: 15px;
+}
+
+.ultima-avaliacao > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.ultima-avaliacao > div > span {
+  color: #778679;
+  font-size: 12px;
+}
+
+.ultima-avaliacao strong {
+  color: #38533f;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.ultima-avaliacao .status-texto {
+  color: #4c8059;
+}
+
+.status-disponivel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  max-width: 100%;
+  padding: 7px 11px;
+
+  border-radius: 30px;
+  background: #e8f3e8;
+  color: #47724e;
+  font-size: 11px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.botao-resultado,
+.botao-recomendacoes,
+.botao-ver,
+.historico-completo,
+.atalhos-lista button {
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.botao-resultado {
+  min-height: 44px;
+  padding: 12px 17px;
+  border: 1px solid #d7e6d7;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #42674a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.botao-resultado:hover {
+  background: #eaf3e9;
+}
+
+/* HISTÓRICO */
+
+.historico {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+}
+
+.historico-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 18px;
+
+  width: 100%;
+  min-width: 0;
+  padding: 16px 18px;
+
+  border: 1px solid #e9eee7;
+  border-radius: 13px;
+  background: #ffffff;
+}
+
+.historico-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.historico-item > div strong {
+  color: #3e5844;
+  font-size: 13px;
+}
+
+.historico-item > div > span {
+  color: #829084;
+  font-size: 12px;
+}
+
+.botao-ver {
+  min-width: 54px;
+  min-height: 38px;
+  padding: 8px 13px;
+
+  border: none;
+  border-radius: 9px;
+  background: #edf5ed;
+  color: #42674a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.botao-ver:hover {
+  background: #dcebdc;
+}
+
+.historico-completo {
+  align-self: flex-start;
+  min-height: 42px;
+  padding: 10px 0;
+
+  border: none;
+  background: transparent;
+  color: #4e7957;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.historico-completo:hover {
+  color: #294b37;
+}
+
+.historico-vazio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+.historico-vazio strong {
+  color: #425a47;
+  font-size: 15px;
+}
+
+.historico-vazio > span {
+  color: #788679;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* RECOMENDAÇÕES */
+
+.inicio-secao.recomendacoes {
+  background: linear-gradient(135deg, #f3f8f0, #fbfcf8);
+  border-color: #e4eddf;
+}
+
+.recomendacoes p {
+  max-width: 720px;
+  margin: 12px 0 20px;
+  color: #6e7e70;
+  font-size: 14px;
+}
+
+.botao-recomendacoes {
+  min-height: 46px;
+  max-width: 100%;
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 11px;
+  background: #527b60;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.botao-recomendacoes:hover:not(:disabled) {
+  background: #41694f;
+}
+
+.botao-recomendacoes:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+/* DICA DA RIZZA */
+
+.dica-rizza {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  width: 100%;
+  min-width: 0;
+  padding: 22px;
+  margin-bottom: 30px;
+
+  border: 1px solid #e4ebdf;
+  border-radius: 17px;
+  background: #fbfcf8;
+}
+
+.dica-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 36px;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e4efe1;
+  color: #4c7452;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dica-rizza > div:last-child {
+  min-width: 0;
+}
+
+.dica-rizza p {
+  margin: 8px 0 0;
+  color: #647466;
+  font-size: 13px;
+}
+
+/* ATALHOS */
+
+.atalhos {
+  width: 100%;
+  min-width: 0;
+}
+
+.atalhos h2 {
+  margin-bottom: 18px;
+}
+
+.atalhos-lista {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+
+.atalhos-lista button {
+  min-width: 0;
+  min-height: 60px;
+  padding: 14px;
+
+  border: 1px solid #e0e9df;
+  border-radius: 13px;
+  background: #ffffff;
+  color: #41634a;
+  font-size: 13px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.atalhos-lista button:hover {
+  background: #edf5eb;
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   TABLETS
+======================================== */
+
+@media (max-width: 900px) {
+  .inicio {
+    padding: 26px 22px 36px;
+  }
+
+  .ultima-avaliacao {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ultima-avaliacao .botao-resultado {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .atalhos-lista {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .inicio-acoes {
+    gap: 14px;
+  }
+}
+
+/* ========================================
+   CELULARES
+======================================== */
+
+@media (max-width: 600px) {
+  .inicio {
+    padding: 18px 14px 30px;
+  }
+
+  .inicio-boas-vindas {
+    padding: 23px 19px;
+    margin-bottom: 18px;
+    border-radius: 17px;
+  }
+
+  .inicio h1 {
+    font-size: clamp(27px, 8vw, 35px);
+  }
+
+  .inicio h2 {
+    font-size: 25px;
+  }
+
+  .inicio-boas-vindas p {
+    font-size: 13px;
+  }
+
+  .inicio-acoes {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  .inicio-acoes button {
+    min-height: 84px;
+    padding: 17px;
+    border-radius: 14px;
+  }
+
+  .inicio-acoes strong {
+    font-size: 14px;
+  }
+
+  .inicio-acoes small {
+    font-size: 12px;
+  }
+
+  .inicio-secao {
+    padding: 19px 16px;
+    margin-bottom: 19px;
+    border-radius: 16px;
+  }
+
+  .secao-titulo {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 17px;
+  }
+
+  .ultima-avaliacao {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+    padding: 17px;
+  }
+
+  .ultima-avaliacao .botao-resultado {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .historico-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .historico-item .status-disponivel {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .historico-item .botao-ver {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .historico-completo {
+    max-width: 100%;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .recomendacoes p {
+    font-size: 13px;
+  }
+
+  .botao-recomendacoes {
+    width: 100%;
+  }
+
+  .dica-rizza {
+    gap: 12px;
+    padding: 17px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+  }
+
+  .dica-rizza p {
+    font-size: 12px;
+  }
+
+  .atalhos-lista {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .atalhos-lista button {
+    min-height: 52px;
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+}
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 360px) {
+  .inicio {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .inicio-boas-vindas,
+  .inicio-secao {
+    padding: 16px 13px;
+  }
+
+  .inicio-acoes button {
+    gap: 11px;
+    padding: 14px;
+  }
+
+  .inicio-acoes button > span {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .historico-item {
+    padding: 11px;
+  }
+
+  .atalhos-lista {
+    gap: 8px;
+  }
+}

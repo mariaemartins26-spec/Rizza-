@@ -1,0 +1,238 @@
+.perfil-container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  padding: 45px 70px 60px;
+  box-sizing: border-box;
+  background: #f8faf9;
+}
+
+/* TOPO */
+
+.perfil-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.perfil-container h1 {
+  font-size: 34px;
+  margin: 0 0 10px;
+  color: #29443a;
+}
+
+.perfil-subtitulo {
+  color: #718078;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+/* BOTÃO EDITAR */
+
+.botao-editar,
+.botao-salvar,
+.botao-cancelar {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 22px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botao-editar {
+  background: #6f9f8b;
+  color: white;
+}
+
+.botao-editar:hover {
+  background: #5f8e7b;
+}
+
+
+/* SEÇÕES */
+
+.perfil-secao {
+  margin-bottom: 40px;
+}
+
+.perfil-secao h2 {
+  font-size: 20px;
+  color: #38594c;
+  margin: 0 0 20px;
+}
+
+
+/* GRID */
+
+.perfil-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+/* CAMPOS */
+
+.perfil-item {
+  background: #ffffff;
+  border: 1px solid #e1ebe6;
+  border-radius: 14px;
+  padding: 22px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(65, 95, 82, 0.05);
+}
+
+.perfil-item label {
+  display: block;
+  font-size: 14px;
+  color: #718078;
+  margin-bottom: 9px;
+  font-weight: 500;
+}
+
+.perfil-item p {
+  margin: 0;
+  font-size: 17px;
+  color: #29443a;
+}
+
+
+/* INPUTS */
+
+.perfil-item input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  border: 1px solid #cddbd4;
+  border-radius: 9px;
+  font-size: 16px;
+  color: #29443a;
+  background: #fbfdfc;
+  outline: none;
+  transition: 0.2s;
+}
+
+.perfil-item input:focus {
+  border-color: #6f9f8b;
+  box-shadow: 0 0 0 3px rgba(111, 159, 139, 0.12);
+}
+
+
+/* SELECT DE ESTADO */
+
+.perfil-item select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  border: 1px solid #cddbd4;
+  border-radius: 9px;
+  font-size: 16px;
+  color: #29443a;
+  background: #fbfdfc;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.perfil-item select:hover {
+  border-color: #a9c4b7;
+}
+
+.perfil-item select:focus {
+  border-color: #6f9f8b;
+  box-shadow: 0 0 0 3px rgba(111, 159, 139, 0.12);
+}
+
+
+/* CEP */
+
+.campo-cep {
+  width: 100%;
+}
+
+.campo-cep input {
+  width: 100%;
+}
+
+.campo-cep small {
+  display: block;
+  margin-top: 7px;
+  color: #6f9f8b;
+  font-size: 13px;
+}
+
+
+/* CAMPOS DESABILITADOS */
+
+.perfil-item input:disabled {
+  background: #f1f4f2;
+  color: #9aa69f;
+  cursor: not-allowed;
+}
+
+
+/* LISTA DE CIDADES */
+
+.perfil-item datalist {
+  background: white;
+}
+
+
+/* BOTÕES INFERIORES */
+
+.perfil-acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.botao-cancelar {
+  background: #edf2ef;
+  color: #53655c;
+}
+
+.botao-cancelar:hover {
+  background: #e2ebe6;
+}
+
+.botao-salvar {
+  background: #6f9f8b;
+  color: white;
+}
+
+.botao-salvar:hover {
+  background: #5f8e7b;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+  .perfil-container {
+    padding: 30px 25px 50px;
+  }
+
+  .perfil-topo {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .perfil-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil-acoes {
+    justify-content: stretch;
+  }
+
+  .botao-cancelar,
+  .botao-salvar {
+    flex: 1;
+  }
+
+}

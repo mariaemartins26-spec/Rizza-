@@ -1,0 +1,91 @@
+
+.pagina-recomendacoes {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px;
+  box-sizing: border-box;
+  color: #34483e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pagina-recomendacoes h1 {
+  margin: 0 0 12px;
+  color: #527b68;
+  font-family: "Bodoni Moda", serif;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.pagina-recomendacoes > p {
+  color: #718078;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.pagina-recomendacoes article {
+  background: #ffffff;
+  border: 1px solid #e1ebe3;
+  border-left: 5px solid #a8c9b1;
+  border-radius: 14px;
+  padding: 24px;
+  margin: 18px 0;
+  box-shadow: 0 5px 18px rgba(67, 96, 76, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pagina-recomendacoes article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 24px rgba(67, 96, 76, 0.1);
+}
+
+.pagina-recomendacoes article h2 {
+  color: #527b68;
+  font-size: 19px;
+  margin: 0 0 12px;
+}
+
+.pagina-recomendacoes article p {
+  color: #66756b;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+.pagina-recomendacoes button {
+  margin-top: 20px;
+  padding: 13px 23px;
+  border: none;
+  border-radius: 9px;
+  background: #dcecdf;
+  color: #3f6851;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.pagina-recomendacoes button:hover {
+  background: #c8dfcd;
+  transform: translateY(-1px);
+}
+
+.pagina-recomendacoes button:focus-visible {
+  outline: 2px solid #527b68;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .pagina-recomendacoes {
+    padding: 22px 16px;
+  }
+
+  .pagina-recomendacoes h1 {
+    font-size: 30px;
+  }
+
+  .pagina-recomendacoes article {
+    padding: 18px;
+  }
+}

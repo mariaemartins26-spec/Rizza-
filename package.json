@@ -1,16 +1,18 @@
-
 {
-  "name": "rizza-backend",
+  "name": "frontend-oficina-treino",
+  "private": true,
   "version": "1.0.0",
-  "description": "Backend do sistema Rizza",
-  "main": "app.js",
+  "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "dev": "node --watch app.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "mysql2": "^3.22.5"
-  }
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^5.4.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {}
 }
